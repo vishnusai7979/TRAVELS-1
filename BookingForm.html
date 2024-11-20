@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .booking-form {
+  color: white;
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+  background: #000000;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 5px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 100%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+a {
+  background-color: red;
+  color: #000000;
+  text-align: center;
+  border-radius: 10px;
+  padding-left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50%;
+}
+    </style>
+  </head>
+  <h2 style="text-align: center;">BookingForm</h2>
+  <form class="booking-form" action="#" method="post">
+    <div>
+      <label>Your Name</label>
+      <input>
+    </div>
+    <div>
+      <label>Your E-mail</label>
+      <input>
+    </div>
+    <div>
+      <label>Your Phone</label>
+      <input>
+    </div>
+    <hr>
+    <div>
+      <label>Adults</label>
+      <input>
+    </div>
+    <div>
+      <label>Children</label>
+      <input>
+    </div>
+    <div>
+      <label for="checkin-date">Check-in Date</label>
+      <input type="date" id="checkin-date" name="checkin">
+    </div>
+    <div class="elem-group inlined">
+      <label for="checkout-date">Check-out Date</label>
+      <input type="date" id="checkout-date" name="checkout">
+    </div>
+    <div class="elem-group">
+      <label for="room-selection">Select Room Preference</label>
+      <select>
+          <option value="">Choose a Room from the List</option>
+          <option value="connecting">Connecting</option>
+          <option value="adjoining">Adjoining</option>
+          <option value="adjacent">Adjacent</option>
+      </select>
+    </div>
+    <hr>
+    <div class="elem-group">
+      <label for="message">Anything Else?</label>
+      <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+    </div>
+    <a href="ThankYou.html" class="book">Book</a>
+  </form>
+</html>
